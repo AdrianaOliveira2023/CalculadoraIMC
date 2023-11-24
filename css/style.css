@@ -1,0 +1,130 @@
+ /*Estilos para corpo*/
+body {
+    font-family: monospace;         /* Define a fonte para todo o documento */
+    color: #fff;                  /* Define a cor do texto */    
+    background:  #A65D03;   /* Define a cor de fundo */
+    margin: 0;                      /* Remove a margem padrão */
+    display: flex;                  /* Usa flexbox para centralizar o conteúdo tanto vertical quanto horizontalmente */
+    align-items: center;            /* Centraliza verticalmente os itens */
+    justify-content: center;        /* Centraliza horizontalmente os itens*/
+    height: 100vh;                  /* Define a altura do body como 100% da altura da janela de visualização */
+}
+
+ /*Container principal/corpo da calculadora*/
+.container {
+    background: linear-gradient(to bottom, #BF7E04, #A65D03, #BF7E04);  /* Aplica um fundo gradiente linear de cima oara baixo */
+    text-align: center;                                                       /* Alinha o texto*/
+    background-color: #fff;                                                 /* Aplica cor de fundo*/
+    padding: 20px;                                                            /* Preenchimento interno */
+    border-radius: 10px;                                                      /* Valor dos cantos arredondados à caixa */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);                                /* Adiciona sombra para dar profundidade */
+}
+
+.outer-container{
+    background: linear-gradient(to bottom, #A65D03, #BF7E04);      /* Aplica um fundo gradiente linear de baixo para cima */
+    padding: 20px;                                                      /* Preenchimento interno */
+    border-radius: 10px;                                                /* Valor dos cantos arredondados à caixa */
+    overflow: hidden;                                                   /*  Esconde qualquer conteúdo que ultrapasse os limites do contêiner*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);                         /* Adiciona sombra para dar profundidade */
+}
+
+.social-icons {
+    display: flex;                                                     /* Ativa o modelo de layout flexível para o contêiner de ícones sociais.*/
+    justify-content: space-around;                                     /* Distribui os ícones sociais no contêiner com espaçamento uniforme */
+    margin-top: 10px;                                                  /* Adiciona uma margem superior ao contêiner de ícones sociais */
+}
+
+.social-icons a {
+    color: white;                                                   /* Define a cor do texto para os ícones sociais*/
+    font-size: 20px;                                                  /* Define o tamanho da fonte para os ícones sociais*/
+    margin: 0 10px;                                                   /* Adiciona margem à direita e à esquerda para os ícones sociais*/    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);                        /* Adiciona sombra para dar profundidade */
+}
+
+.social-icons a :hover {
+    color: #8C2C23;                                                /* Define a cor quando o usuário passa o mouse sobre os ícones sociais*/
+}
+
+/* Estilo para elementos selecionados pela tag label */
+label {
+    display:block;                                                   /* Usa flexbox para alinhar os itens do label em uma linha (o padrão é 'row') */
+    margin: 10px 0;                                                  /* Adiciona margem acima e abaixo do label, proporcionando espaçamento */
+}
+
+/* Estilo para elementos de entrada */
+input {
+    width: 100%;                                         /* Define a largura do elemento como 100% da largura do contêiner pai */
+    padding: 10px;                                       /* Adiciona espaço interno ao redor do conteúdo do elemento */
+    margin-bottom: 20px;                                 /* Adiciona espaço inferior entre este elemento e o próximo */
+    box-sizing: border-box;                              /* Faz com que o padding e a borda sejam incluídos na largura total do elemento */
+    border-radius: 10px;                                 /* Adiciona um arredondamento de 10 pixels às bordas do elemento */
+    border: 1px solid #A65D03;                         /* Adiciona uma borda sólida e com cor */
+    outline: none;                                       /* Remove a borda de destaque ao focar no elemento (comportamento padrão do navegador) */    
+}
+
+/* Estilo para elemeneto em foco */
+input:focus {   
+    border: 1px solid #BF7E04;                        /* Muda a cor da borda para #BF7E04 ao focar no elemento */
+}
+
+/* Estilo para elemeneto botão calcular */
+button {
+    background: linear-gradient(to bottom, #A65D03,  #BF7E04, #A65D03); /* Aplica um gradiente linear de cima para baixo */
+    color: #fff;                                                            /* Define a cor do texto */
+    padding: 10px 20px;                                                       /* Adiciona espaçamento interno no topo/bottom e à esquerda/direita */
+    border: 1px solid #A65D03;                                              /* Adiciona uma borda*/
+    border-radius: 5px;                                                       /* Adiciona um arredondamento às bordas do botão */
+    cursor: pointer;                                                          /* Altera o cursor para uma mão ao passar sobre o botão, indicando que é clicável */
+    transition: background-color 0.4s ease-out 0.2;                           /* Adiciona transição ao fundo do botão */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);                                /* Adiciona sombra para dar profundidade */
+}
+
+/* Estilo para elemeneto botão calcular */
+button:hover {
+    background: linear-gradient(to bottom,  #BF7E04,  #A65D03, #BF7E04); /* transição suave */
+    border: 1px solid #BF7E04;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);                                 /* Adiciona sombra para dar profundidade */
+}
+
+/* Estilo para elemeneto resultado*/
+#resultado {   
+    padding: 10px;    
+    margin-top: 5px;
+    font-weight: bold;
+    color:  #fff;
+}
+
+/* Estilo para elemeneto rodapé */
+footer{
+    background: linear-gradient(to bottom, #BF7E04,  #A65D03);     /* Aplica um fundo gradiente linear de baixo para cima */
+    padding: 20px;                                                      /* Preenchimento interno */
+    border-radius: 10px;                                                /* Valor dos cantos arredondados à caixa */
+    overflow: hidden;                                                   /*  Esconde qualquer conteúdo que ultrapasse os limites do contêiner*/
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);                          /* Adiciona sombra para dar profundidade */
+}
+
+/* Estilo para o link do rodapé */
+a {
+    color:#fff
+ }
+/* Estilo do link rodapé quando o mouse passar por*/
+footer a:hover{
+    color: #8C2C23;
+ } 
+
+
+/* Color Theme Swatches in Hex */
+.Condimentos-1-hex { color: #D9A404; }
+.Condimentos-2-hex { color: #BF7E04; }
+.Condimentos-3-hex { color: #A65D03; }
+.Condimentos-4-hex { color: #8C2C23; }
+.Condimentos-5-hex { color: #D93D3D; }
+
+
+
+
+
+
+
+

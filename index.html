@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <script src="js/script.js"></script> <!-- Script JavaScript -->
+
+    <title>Calculadora de IMC</title>
+</head>
+<body>  
+    
+    
+    <div class="container"> <!-- Container principal -->
+        <div class="outer-container">
+            <div class="social-icons">                
+                <a href="https://www.facebook.com/profile.php?id=100002977715486&locale=pt_BR" target="_blank"><i class='fab fa-facebook-square'></i></i></a>
+                <a href="https://www.linkedin.com/in/adriana-oliveira-160a1399/" target="_blank"><i class='fab fa-linkedin'></i></a>
+                <a href="https://github.com/AdrianaOliveira2023" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/adriana.olliv/" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+        </div> 
+        <h1>Calcule seu IMC</h1>        
+                    
+        <label for="name">Nome:</label>                                            <!-- Rótulo associado ao campo de entrada de nome -->
+        <input type="text" id="name" placeholder="Digite seu nome" required>       <!-- Campo de entrada (input) para o nome com a mensagem de placeholder e a obrigatoriedade (required) -->
+        
+        <label for="weight">Peso (kg):</label>                                     <!-- Rótulo associado ao campo de entrada de peso -->
+        <input type="number" id="weight" placeholder="Digite seu peso" required>   <!-- Campo de entrada (input) para o peso com a mensagem de placeholder e a obrigatoriedade (required) -->
+
+        <label for="height">Altura (m):</label>                                    <!-- Rótulo associado ao campo de entrada de altura -->
+        <input type="number" id="height" placeholder="Digite sua altura" required> <!-- Campo de entrada (input) para a altura com a mensagem de placeholder e a obrigatoriedade (required) -->
+        <!-- Div para exibir o resultado do cálculo do IMC -->
+
+        <button onclick="calcularIMC()">Calcular</button>                          <!-- Botão para acionar o cálculo do IMC, associado à função calcularIMC() -->
+        <br>
+        <br>        
+        <labe>Resultado:</label> 
+        <div id="resultado"></div>
+        
+        <br>
+        <footer>
+            <!-- Informações do desenvolvedor com link para o Instagram e mensagem de direitos autorais -->
+            <p>Desenvolvido por <a href="https://www.instagram.com/adriana.olliv/" target="_blank">Adriana Oliveira</a><br>Todos os direitos reservados. 2023 &copy;</p>
+        </footer>
+    </div>          
+</body>
+</html>
